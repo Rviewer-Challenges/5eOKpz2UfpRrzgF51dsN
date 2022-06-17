@@ -1,8 +1,16 @@
+import Header from './components/Header'
+import Navigation from './components/Navigation'
+import Feed from './components/Feed'
+
 const App = () => {
 	return (
-		<div>
-			<h1>Hello World</h1>
-		</div>
+		<>
+			<Header />
+			<Navigation />
+			<Feed>
+				
+			</Feed>
+		</>
 	)
 }
 
