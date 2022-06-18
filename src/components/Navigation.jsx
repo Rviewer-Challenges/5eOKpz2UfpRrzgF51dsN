@@ -6,18 +6,18 @@ import NavigationButton from './NavigationButton'
 
 const Navigation = () => {
 	return (
-		<nav className='flex fixed left-0 z-10 bottom-0 w-full h-[52px] bg-white border items-center justify-around'>
+		<nav className='flex fixed left-0 z-10 bottom-0 w-full h-[52px] bg-white items-center justify-around'>
 			<NavigationButton>
-				<HomeIcon />
+				<HomeIcon sx={{ width: 26.25, height: 26.25 }} />
 			</NavigationButton>
 			<NavigationButton>
-				<SearchOutlinedIcon />
+				<SearchOutlinedIcon sx={{ width: 26.25, height: 26.25 }} />
 			</NavigationButton>
 			<NavigationButton>
-				<EmailOutlinedIcon />
+				<EmailOutlinedIcon sx={{ width: 26.25, height: 26.25 }} />
 			</NavigationButton>
 			<NavigationButton>
-				<NotificationsOutlinedIcon />
+				<NotificationsOutlinedIcon sx={{ width: 26.25, height: 26.25 }} />
 			</NavigationButton>
 		</nav>
 	)
