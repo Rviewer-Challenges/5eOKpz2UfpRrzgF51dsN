@@ -1,6 +1,6 @@
 import Avatar from '@mui/material/Avatar'
 import profilePicture from '../assets/images/profile.jpg'
-import TweetFooter from './TweetFooter'
+import TweetFooter from './TweetFooter/TweetFooter'
 import TweetHeader from './TweetHeader'
 
 const TextTweet = ({ children }) => {
