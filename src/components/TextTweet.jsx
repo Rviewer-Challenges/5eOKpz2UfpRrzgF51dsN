@@ -1,5 +1,8 @@
+// Icons
 import Avatar from '@mui/material/Avatar'
 import profilePicture from '../assets/images/profile.jpg'
+
+// Components: TweetHeader, TweetFooter
 import TweetFooter from './TweetFooter/TweetFooter'
 import TweetHeader from './TweetHeader'
 

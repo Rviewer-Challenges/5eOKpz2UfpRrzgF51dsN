@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 const NavigationButton = ({ children }) => {
 	return (
 		<a href='#' className='w-full h-full flex items-center justify-center'>

@@ -1,7 +1,10 @@
+// Icons
 import HomeIcon from '@mui/icons-material/Home'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined'
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined'
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined'
+
+// Components: NavigationButton
 import NavigationButton from './NavigationButton'
 
 const Navigation = () => {
