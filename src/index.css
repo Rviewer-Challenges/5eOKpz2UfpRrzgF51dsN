@@ -12,6 +12,6 @@
   }
 
   .hovershadow {
-    @apply flex w-[34px] h-[34px] justify-center items-center rounded-full hover:cursor-pointer
+    @apply flex w-[34px] h-[34px] justify-center items-center rounded-full hover:cursor-pointer transition-all
   }
 }
