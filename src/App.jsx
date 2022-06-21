@@ -1,6 +1,6 @@
 // Components: Header, Navigation, Feed, TextTweet
 import Header from './components/Header'
-import Navigation from './components/Navigation'
+import Navigation from './components/Navigation/Navigation'
 import Feed from './components/Feed'
 import TextTweet from './components/TextTweet'
 
