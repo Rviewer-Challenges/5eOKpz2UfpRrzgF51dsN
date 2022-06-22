@@ -1,6 +1,9 @@
 const TweetFooterButton = ({ children, color, number }) => {
-	if (number >= 1000) {
-		number = `${(number / 1000).toFixed(1)}k`
+	if (number >= 1000 && number < 10000) {
+		number = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+	}
+	if (number >= 10000) {
+		number = `${(number / 10000).toFixed(1)}k`
 	}
 
 	return (
