@@ -1,25 +1,27 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-const Tooltip = ({ children, text }) => {
+let opacity = 'opacity-0'
+const Tooltip = ({ children, text, margin }) => {
 	const [isHovering, setIsHovering] = useState(false)
 
 	const hoverMouseEnter = () => {
-		setTimeout(() => {
-			setIsHovering(true)
-		}, 1000)
+		setIsHovering(true)
 	}
 	const hoverMouseLeave = () => {
 		setIsHovering(false)
 	}
 
+	useEffect(() => {
+		isHovering ? (opacity = 'opacity-0') : (opacity = 'opacity-100 delay-700')
+	}, [isHovering])
+
 	return (
 		<div onMouseEnter={hoverMouseEnter} onMouseLeave={hoverMouseLeave}>
 			{children}
-			{isHovering && (
-				<p className='absolute bg-[#0A1419] bg-opacity-70 text-white text-[10px] mt-[2px] right-1 p-[2px]'>
-					{text}
-				</p>
-			)}
+			<p
+				className={`${opacity} absolute bg-[#0A1419] bg-opacity-70 whitespace-pre text-white text-[10px] rounded-sm ${margin} p-[2px] `}>
+				{text}
+			</p>
 		</div>
 	)
 }
