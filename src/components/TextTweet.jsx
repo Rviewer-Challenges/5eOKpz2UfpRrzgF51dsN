@@ -13,7 +13,7 @@ const TextTweet = ({ children }) => {
 			<div className='w-full'>
 				<TweetHeader name={'Bryan Martínez'} username={'thebryanmartinez'} hour={7}/>
 				<div className=''>{!children ? <p>This is a tweet</p> : children}</div>
-				<TweetFooter retweets={10} likes={2}/>
+				<TweetFooter retweets={1000} comments={1000} likes={2}/>
 			</div>
 		</div>
 	)

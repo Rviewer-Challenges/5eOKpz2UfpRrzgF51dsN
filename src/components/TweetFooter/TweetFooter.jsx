@@ -10,16 +10,16 @@ import TweetFooterButton from './TweetFooterButton'
 const TweetFooter = ({ comments, likes, retweets }) => {
 	return (
 		<div className='flex items-center my-4 w-full justify-between text-[13px]'>
-			<TweetFooterButton color={'text-blue'} number={comments}>
+			<TweetFooterButton color={'blue'} number={comments}>
 				<ModeCommentOutlinedIcon sx={{ width: 18.75, height: 18.75 }} />
 			</TweetFooterButton>
-			<TweetFooterButton color={'text-[#00BA7C]'} number={retweets}>
+			<TweetFooterButton color={'[#00ba7c]'} number={retweets}>
 				<LoopOutlinedIcon sx={{ width: 18.75, height: 18.75 }} />
 			</TweetFooterButton>
-			<TweetFooterButton color={'text-[#f91881]'} number={likes}>
+			<TweetFooterButton color={'[#f91881]'} number={likes}>
 				<FavoriteBorderOutlinedIcon sx={{ width: 18.75, height: 18.75 }} />
 			</TweetFooterButton>
-			<TweetFooterButton color={'text-blue'}>
+			<TweetFooterButton color={'blue'}>
 				<FileUploadOutlinedIcon sx={{ width: 18.75, height: 18.75 }} />
 			</TweetFooterButton>
 		</div>

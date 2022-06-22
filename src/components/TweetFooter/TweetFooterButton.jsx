@@ -1,7 +1,13 @@
 const TweetFooterButton = ({ children, color, number }) => {
+	if (number >= 1000) {
+		number = `${(number / 1000).toFixed(1)}k`
+	}
+
 	return (
-		<div className={`flex items-center hover:cursor-pointer hover:${color} transition-all`}>
-			<div className={`hovershadow hover:${color} hover:bg-opacity-10 transition-all`}>
+		<div
+			className={`flex items-center hover:cursor-pointer hover:text-${color} transition-all`}>
+			<div
+				className={`hovershadow hover:text-${color} hover:bg-opacity-10 transition-all`}>
 				{children}
 			</div>
 			<span>{number}</span>
