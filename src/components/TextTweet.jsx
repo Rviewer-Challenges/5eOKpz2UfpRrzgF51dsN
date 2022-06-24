@@ -8,7 +8,7 @@ import TweetAvatar from './TweetAvatar'
 
 const TextTweet = ({ children }) => {
 	return (
-		<div className='flex w-full h-36 px-4 py-3 pb-8 border border-b-1 border-black/10 border-x-0 border-t-0 hover:cursor-pointer'>
+		<div className='flex w-full px-4 pt-3 border border-b-1 border-black/10 border-x-0 border-t-0 hover:cursor-pointer'>
 			<TweetAvatar picture={profilePicture} />
 			<div className='w-full'>
 				<TweetHeader name={'Bryan Martínez'} username={'thebryanmartinez'} hour={7}/>

@@ -4,11 +4,11 @@
 
 @layer components {
   .name {
-    @apply font-bold 
+    @apply font-bold text-ellipsis overflow-hidden whitespace-nowrap
   }
 
   .username {
-    @apply font-normal text-gray
+    @apply font-normal text-gray text-ellipsis overflow-hidden whitespace-nowrap
   }
 
   .hovershadow {
