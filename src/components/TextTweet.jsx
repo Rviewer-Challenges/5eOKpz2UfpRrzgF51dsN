@@ -1,4 +1,4 @@
-// Components: TweetHeader, TweetFooter
+// Components: TweetHeader, TweetFooter, TweetAvatar
 import TweetFooter from './TweetFooter/TweetFooter'
 import TweetHeader from './TweetHeader'
 import TweetAvatar from './TweetAvatar'
@@ -12,7 +12,7 @@ const TextTweet = ({
 	likes,
 	name,
 	username,
-	profilePicture
+	profilePicture,
 }) => {
 	return (
 		<div className='flex w-full px-4 pt-3 border border-b-1 border-black/10 border-x-0 border-t-0 hover:cursor-pointer'>
