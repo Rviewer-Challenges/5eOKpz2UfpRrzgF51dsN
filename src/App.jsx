@@ -30,7 +30,7 @@ const App = () => {
 					likes={700699}
 					comments={675401}
 					retweets={78252}>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+					Lorem #ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
 					commodi animi, laboriosam voluptatum adipisci illum?
 				</TextTweet>
 				<TextTweet

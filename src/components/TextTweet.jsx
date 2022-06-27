@@ -14,12 +14,13 @@ const TextTweet = ({
 	username,
 	profilePicture,
 }) => {
+
 	return (
-		<div className='noSelect flex w-full px-4 pt-3 border border-b-1 border-black/10 border-x-0 border-t-0 hover:cursor-pointer'>
+		<div className='noSelect tweetContainer'>
 			<TweetAvatar profilePicture={profilePicture} />
 			<div className='w-full'>
 				<TweetHeader name={name} username={username} time={time} />
-				<div>{!children ? <p>This is a tweet</p> : children}</div>
+				<div>{!children ? <p>This is a tweet</p> : <p>{children}</p>}</div>
 				<TweetFooter retweets={retweets} comments={comments} likes={likes} />
 			</div>
 		</div>
