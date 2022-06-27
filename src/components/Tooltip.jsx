@@ -18,10 +18,10 @@ const Tooltip = ({ children, text, margin }) => {
 	return (
 		<div onMouseEnter={hoverMouseEnter} onMouseLeave={hoverMouseLeave}>
 			{children}
-			<p
+			{/* <p
 				className={`${opacity} absolute bg-[#0A1419] bg-opacity-70 whitespace-pre text-white text-[10px] rounded-sm ${margin} p-[2px] `}>
 				{text}
-			</p>
+			</p> */}
 		</div>
 	)
 }
