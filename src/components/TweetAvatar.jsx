@@ -1,10 +1,10 @@
 // Icon
 import Avatar from '@mui/material/Avatar'
 
-const TweetAvatar = ({ picture }) => {
+const TweetAvatar = ({ profilePicture }) => {
 	return (
 		<div className='mr-3 cursor-pointer'>
-			<Avatar className='hover:brightness-[.85] transition-all' sx={{ width: 48, height: 48 }} src={picture}/>         
+			<Avatar className='hover:brightness-[.85] transition-all' sx={{ width: 48, height: 48 }} src={profilePicture}/>         
 		</div>
 	)
 }

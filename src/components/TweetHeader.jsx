@@ -4,7 +4,7 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
 
 import Tooltip from './Tooltip'
 
-const TweetHeader = ({ name, username, hour }) => {
+const TweetHeader = ({ name, username, time }) => {
 	return (
 		<div className='w-full flex items-center mt-[-8px] justify-between'>
 			<div>
@@ -15,7 +15,7 @@ const TweetHeader = ({ name, username, hour }) => {
 				<span className='text-gray mx-2'>
 					<CircleIcon sx={{ fontSize: 3 }}></CircleIcon>
 				</span>
-				<span className='text-gray hover:underline decoration-1'>{hour}h</span>
+				<span className='text-gray hover:underline decoration-1'>{time}</span>
 			</div>
 			<Tooltip text={'More'} margin={'ml-[2px]'}>
 				<div className='hovershadow hover:text-blue hover:bg-blue hover:bg-opacity-10'>
