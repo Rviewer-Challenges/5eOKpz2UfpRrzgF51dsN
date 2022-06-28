@@ -15,6 +15,7 @@ import sampleGif from './assets/images/sampleGif.gif'
 import sampleAvatar1 from './assets/images/sampleAvatar1.jpg'
 import sampleAvatar2 from './assets/images/sampleAvatar2.jpg'
 import sampleAvatar3 from './assets/images/sampleAvatar3.jpg'
+import sampleImageHorizontal2 from './assets/images/sampleImageHorizontal2.jpg'
 
 const App = () => {
 	return (
@@ -48,7 +49,7 @@ const App = () => {
 					profilePicture={sampleAvatar2}
 					name={'Walker Fritz'}
 					username={'walkerfrights7'}
-					time={'18d'}
+					time={'1y'}
 					likes={824954}
 					comments={14607}
 					retweets={652049}
@@ -75,7 +76,25 @@ const App = () => {
 					time={'27s'}
 					likes={819654}
 					comments={859543}
-					retweets={781}>
+					retweets={781}
+					image1={sampleImageHorizontal}
+					image2={sampleImageHorizontal}
+					image3={sampleImageHorizontal}
+					image4={sampleImageHorizontal}>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+					blanditiis.
+				</ImagesTweet>
+				<ImagesTweet
+					profilePicture={sampleAvatar1}
+					name={'Jeanie Sullivan'}
+					username={'jsully840'}
+					time={'27s'}
+					likes={819654}
+					comments={859543}
+					retweets={781}
+					image1={sampleImageHorizontal}
+					image2={sampleImageHorizontal2}
+					image3={sampleImageHorizontal2}>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
 					blanditiis.
 				</ImagesTweet>

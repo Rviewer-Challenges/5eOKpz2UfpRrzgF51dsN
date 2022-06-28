@@ -2,6 +2,7 @@
 import TweetFooter from './TweetFooter/TweetFooter'
 import TweetHeader from './TweetHeader'
 import TweetAvatar from './TweetAvatar'
+import ImageContainer from './ImageContainer'
 
 const ImagesTweet = ({
 	children,
@@ -13,6 +14,10 @@ const ImagesTweet = ({
 	name,
 	username,
 	profilePicture,
+	image1,
+	image2,
+	image3,
+	image4,
 }) => {
 	return (
 		<div className='noSelect tweetContainer'>
@@ -20,7 +25,7 @@ const ImagesTweet = ({
 			<div className='w-full'>
 				<TweetHeader name={name} username={username} time={time} />
 				<div>{!children ? <p>This is a tweet</p> : children}</div>
-				<img className='mt-4 rounded-xl' src={image} loading='lazy' />
+				<ImageContainer image1={image1} image2={image2} image3={image3} image4={image4} />
 				<TweetFooter retweets={retweets} comments={comments} likes={likes} />
 			</div>
 		</div>

@@ -19,8 +19,8 @@ const ImageTweet = ({
 			<TweetAvatar profilePicture={profilePicture} />
 			<div className='w-full'>
 				<TweetHeader name={name} username={username} time={time} />
-				<div>{!children ? <p>This is a tweet</p> : children}</div>
-				<img className='mt-4 rounded-xl' src={image} loading='lazy' />
+				<div>{!children ? <p>This is a tweet</p> : <p>{children}</p>}</div>
+				<img className='mt-4 rounded-2xl' src={image} loading='lazy' />
 				<TweetFooter retweets={retweets} comments={comments} likes={likes} />
 			</div>
 		</div>
